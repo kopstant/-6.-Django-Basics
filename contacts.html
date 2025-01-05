@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Контакты</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        main {
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 280px;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<main class="d-flex">
+    <!-- Боковое меню -->
+    <nav class="sidebar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi pe-none me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Меню</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="home.html" class="nav-link link-body-emphasis" aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    Главная
+                </a>
+            </li>
+            <li>
+                <a href="category.html" class="nav-link link-body-emphasis">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    Категории
+                </a>
+            </li>
+            <li>
+                <a href="orders.html" class="nav-link link-body-emphasis">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#table"></use>
+                    </svg>
+                    Заказы
+                </a>
+            </li>
+            <li>
+                <a href="contacts.html" class="nav-link active">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#grid"></use>
+                    </svg>
+                    Контакты
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+               data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/kopstant.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>kopstant</strong>
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Выход</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+        <section class="content">
+        <h1 class="text-center mb-4">Контакты</h1>
+        <div class="d-flex justify-content-between gap-4">
+            <!-- Форма -->
+            <div class="card p-3 flex-grow-1">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="nameInput" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Почта</label>
+                        <input type="email" class="form-control" id="emailInput" name="email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="messageInput" class="form-label">Сообщение</label>
+                        <textarea class="form-control" id="messageInput" name="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+            <!-- Контактная информация -->
+            <div class="flex-grow-1">
+                <h5>Наши контакты</h5>
+                <p>Нет необходимости собирать страницы один в один. Важно, чтобы структурно получившиеся страницы были похожи на то, что изображено на макетах.</p>
+                <p>При работе с веб-приложением важно понимать основы того, как всё устроено внутри, или «под капотом», как говорят разработчики. Для этого нужно уметь без применения фреймворков написать простое веб-приложение для тестирования функциональности или проверки гипотезы.</p>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
